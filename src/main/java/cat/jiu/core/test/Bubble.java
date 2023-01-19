@@ -2,7 +2,7 @@ package cat.jiu.core.test;
 
 import java.util.ArrayList;
 
-import cat.jiu.core.CoreLoggers;
+//import cat.jiu.core.CoreLoggers;
 import cat.jiu.core.JiuCore;
 import cat.jiu.core.api.events.iface.item.IItemInFluidTickEvent;
 import cat.jiu.core.util.JiuCoreEvents;
@@ -72,7 +72,7 @@ public class Bubble extends BaseItem.Normal implements IItemInFluidTickEvent{
 								poss.add(sidePos);
 							}
 						}
-						CoreLoggers.getLogOS().info("Fluid: " + (i+1) + "@" + poss.size() + "#" + (poss.size()-i));
+					//	CoreLoggers.getLogOS().info("Fluid: " + (i+1) + "@" + poss.size() + "#" + (poss.size()-i));
 					}
 				}
 			}

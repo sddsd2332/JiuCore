@@ -1,6 +1,6 @@
 package cat.jiu.core.test;
 
-import cat.jiu.core.CoreLoggers;
+//import cat.jiu.core.CoreLoggers;
 import cat.jiu.core.api.events.mixin.clazz.game.WorldTimeChangeEvent;
 import net.minecraft.command.CommandTime;
 import net.minecraftforge.fml.common.Mod;
@@ -16,7 +16,7 @@ public class Test {
 				return;
 			}
 		}else {
-			CoreLoggers.getLogOS().info("OldWorldTime: " + event.oldTime + ", NewWorldTime: " + event.getNewWorldTime());
+		//	CoreLoggers.getLogOS().info("OldWorldTime: " + event.oldTime + ", NewWorldTime: " + event.getNewWorldTime());
 		}
 	}
 }

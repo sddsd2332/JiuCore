@@ -91,7 +91,7 @@ public class JiuCore implements IInFluidCraftingEvent, IMod {
 		owner = JiuCore.OWNER)
 	public static JiuCore instance;
 	public JiuCore() {
-		CoreLoggers.getLogOS().info("Constructors start.");
+		//CoreLoggers.getLogOS().info("Constructors start.");
 		
 		Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 			try {
@@ -100,7 +100,7 @@ public class JiuCore implements IInFluidCraftingEvent, IMod {
 				if(l != null) l.stream().forEach(e -> e.shutdown(proxy.getSide()));
 				Values.saveValue(true);
 			}catch(Exception e) {
-				CoreLoggers.getLogOS().exception(e);
+			//	CoreLoggers.getLogOS().exception(e);
 			}
 		},"Shutdown Thread"));
 		
@@ -108,9 +108,11 @@ public class JiuCore implements IInFluidCraftingEvent, IMod {
 		try {
 			Block.class.getDeclaredField("lightValue");
 			Item.class.getDeclaredField("maxDamage");
-			CoreLoggers.getLogOS().info("Is Dev.");
-		}catch(Throwable e) {CoreLoggers.getLogOS().info("Is not Dev.");}
-		CoreLoggers.getLogOS().info("Constructors end.");
+		//	CoreLoggers.getLogOS().info("Is Dev.");
+		}catch(Throwable e) {
+			//CoreLoggers.getLogOS().info("Is not Dev.");
+		}
+	//	CoreLoggers.getLogOS().info("Constructors end.");
 	}
 	
 	@SidedProxy(
@@ -120,7 +122,7 @@ public class JiuCore implements IInFluidCraftingEvent, IMod {
 	
 	@Mod.EventHandler
 	public void onPreInit(FMLPreInitializationEvent event) {
-		CoreLoggers.getLogOS().info("PreInit start.");
+	//	CoreLoggers.getLogOS().info("PreInit start.");
 		proxy.preInit(event);
 		System.out.println(proxy);
 		JiuCoreEvents.addEvent(this, new InFluidCrafting(), new EntityDeathDrops());
@@ -139,7 +141,7 @@ public class JiuCore implements IInFluidCraftingEvent, IMod {
 			new Init();
 			AnvilRecipe.addAnvilRecipe(new ItemStack(Items.APPLE, 5), new ItemStack(Blocks.GOLD_BLOCK), new ItemStack(Blocks.DIAMOND_BLOCK, 5), 5);
 		}
-		CoreLoggers.getLogOS().info("PreInit end.");
+	//	CoreLoggers.getLogOS().info("PreInit end.");
 	}
 
 	@Mod.EventHandler

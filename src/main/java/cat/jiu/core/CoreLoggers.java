@@ -1,3 +1,4 @@
+/*
 package cat.jiu.core;
 
 import org.apache.logging.log4j.LogManager;
@@ -24,3 +25,5 @@ public class CoreLoggers {
 		return logos; 
 	}
 }
+
+ */

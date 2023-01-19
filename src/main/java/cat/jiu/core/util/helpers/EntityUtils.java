@@ -15,7 +15,7 @@ import com.google.common.collect.Maps;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-import cat.jiu.core.CoreLoggers;
+//import cat.jiu.core.CoreLoggers;
 import cat.jiu.core.api.ITimer;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.command.ICommandSender;
@@ -125,7 +125,7 @@ public final class EntityUtils {
         Potion potion = Potion.getPotionFromResourceLocation(id);
         
         if(potion == null) {
-        	CoreLoggers.getLogOS().fatal("Effect not found: " + id);
+        //	CoreLoggers.getLogOS().fatal("Effect not found: " + id);
         	return null;
         }else {
         	return potion;

@@ -3,7 +3,7 @@ package cat.jiu.core.test;
 import java.math.BigInteger;
 import java.util.List;
 
-import cat.jiu.core.CoreLoggers;
+//import cat.jiu.core.CoreLoggers;
 import cat.jiu.core.JiuCore;
 import cat.jiu.core.api.ISubBlockSerializable;
 import cat.jiu.core.util.JiuUtils;
@@ -61,7 +61,7 @@ public class BlockTest extends BaseBlock.Sub<BlockTest.TestModSubtypes> {
 	
 	@Override
 	public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-		CoreLoggers.getLogOS().info(JiuUtils.item.getTexture(JiuUtils.item.getStackFromBlockState(world.getBlockState(pos))).toString());
+		//CoreLoggers.getLogOS().info(JiuUtils.item.getTexture(JiuUtils.item.getStackFromBlockState(world.getBlockState(pos))).toString());
 		return Blocks.TNT.onBlockActivated(world, pos, state, player, hand, facing, hitX, hitY, hitZ);
 	}
 	

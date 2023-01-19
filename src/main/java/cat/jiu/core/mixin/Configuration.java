@@ -1,6 +1,7 @@
+/*
 package cat.jiu.core.mixin;
 
-import cat.jiu.core.CoreLoggers;
+//import cat.jiu.core.CoreLoggers;
 import cat.jiu.core.util.base.MixinConfiguration;
 
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
@@ -9,6 +10,8 @@ import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 public class Configuration extends MixinConfiguration {
 	public Configuration() {
 		super("jiucore.mixin.json");
-		CoreLoggers.getLogOS().info("Hello Mixin!");
+		//CoreLoggers.getLogOS().info("Hello Mixin!");
 	}
 }
+
+ */

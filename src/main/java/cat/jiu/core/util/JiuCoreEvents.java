@@ -10,7 +10,7 @@ import org.lwjgl.input.Mouse;
 
 import com.google.common.collect.Lists;
 
-import cat.jiu.core.CoreLoggers;
+//import cat.jiu.core.CoreLoggers;
 import cat.jiu.core.JiuCore;
 import cat.jiu.core.trigger.JiuCoreTriggers;
 import cat.jiu.core.api.IJiuEvent;
@@ -647,7 +647,7 @@ public final class JiuCoreEvents {
 				}
         		
         		if(JiuCore.dev() && pos.getY() >= -61 && pos.getY() <= 0) {
-        			CoreLoggers.getLogOS().info("Y: " + pos.getY());
+        			//CoreLoggers.getLogOS().info("Y: " + pos.getY());
     			}
         	}
     	}

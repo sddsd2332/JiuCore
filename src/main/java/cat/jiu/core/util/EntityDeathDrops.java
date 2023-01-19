@@ -18,7 +18,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 
-import cat.jiu.core.CoreLoggers;
+//import cat.jiu.core.CoreLoggers;
 import cat.jiu.core.api.events.iface.entity.IEntityDeathDropItems;
 
 import net.minecraft.entity.Entity;
@@ -58,7 +58,7 @@ public final class EntityDeathDrops implements IEntityDeathDropItems {
 	
 	public static void addDrops(EntityLivingBase entity, DropType drop) {
 		if(entity instanceof EntityPlayer) {
-			CoreLoggers.getLogOS().error("Can not add drops to Player!");
+	//		CoreLoggers.getLogOS().error("Can not add drops to Player!");
 			return;
 		}
 		

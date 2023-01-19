@@ -19,7 +19,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import cat.jiu.core.CoreLoggers;
+//import cat.jiu.core.CoreLoggers;
 import cat.jiu.core.JiuCore;
 import cat.jiu.core.commands.CommandJiuCore;
 import cat.jiu.core.types.ValueStateType;
@@ -107,7 +107,7 @@ public class Values {
 			}
 			Values.saveValue(true);
 		}else {
-			CoreLoggers.getLogOS().error("Value: '" + valueID + "' is Already added.");
+		//	CoreLoggers.getLogOS().error("Value: '" + valueID + "' is Already added.");
 		}
 	}
 	
@@ -340,12 +340,12 @@ public class Values {
 		for(int i = 0; i < 10; i++) {
 			if(Values.saveValues()) {
 				if(showLoggerInfo) {
-					CoreLoggers.getLogOS().info("Save values to file success, retry count: {}", i);
+			//		CoreLoggers.getLogOS().info("Save values to file success, retry count: {}", i);
 				}
 				return;
 			}
 		}
-		CoreLoggers.getLogOS().error("Can not save values to File!");
+	//	CoreLoggers.getLogOS().error("Can not save values to File!");
 	}
 	
 	private static boolean saveValues() {
